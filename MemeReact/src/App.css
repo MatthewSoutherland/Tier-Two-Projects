@@ -1,0 +1,141 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+:root {
+  --light: #dbe7e7;
+  --white: #FFFFFF;
+  --black: #000000;
+}
+
+#header-container {
+  width: 100%;
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}
+
+.react-logo {
+  width: 2rem;
+  object-fit: contain;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+#main-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: auto;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fontColor);
+}
+
+.btn {
+  position: absolute;
+  top: 2.7rem;
+  left: 80%;
+  cursor: pointer;
+  height: 40px;
+  width: 60px;
+  border-radius: 40%;
+  color: var(--btnFontColor);
+  background-color: var(--btnBg);
+}
+
+.light-theme {
+  --bg: var(--light);
+  --fontColor: var(--black);
+  --btnBg: var(--black);
+  --btnFontColor: var(--white);
+}
+
+.dark-theme {
+  --bg: var(--black);
+  --fontColor: var(--light);
+  --btnBg: var(--white);
+  --btnFontColor: var(--black);
+}
+
+#nav-h {
+  text-align: center;
+}
+
+#button-div {
+  width: 80%;
+}
+
+header {
+  display: inline-flex;
+}
+
+.form-input {
+  width: 25%;
+  padding: .1rem;
+  margin: 1rem;
+  border-radius: .2rem;
+}
+
+.form-input:focus {
+  box-shadow: .2rem .2rem lightblue;
+}
+
+#meme-but {
+  width: 30%;
+  border-radius: .4rem;
+}
+
+#meme-but:active {
+  opacity: .8;
+  box-shadow: .2rem .2rem lightblue;
+  width: 28%;
+}
+
+#meme-image-div {
+  position: relative;
+  left: 25%;
+  margin: 2rem;
+  width: 30rem;
+}
+
+#meme-image {
+  max-width: 100%;
+  object-fit: contain;
+}
+
